@@ -1,0 +1,20 @@
+__pycache__/
+*.py[cod]
+*.egg-info/
+.pytest_cache/
+.venv/
+venv/
+.idea/
+.vscode/
+
+# Training artifacts
+outputs/*
+!outputs/.gitkeep
+*.pth
+*.pt
+*.ckpt
+
+# The ECPC-IDS data are downloaded and split separately.
+data/five_fold/**/*
+!data/five_fold/**/
+!data/five_fold/**/.gitkeep
